@@ -8,10 +8,9 @@
 </head>
 <body>
 <header>
-    <h1>Kalender für Januar 2025</h1>
+    <h1>Deine Termine</h1>
 </header>
 
-<h2>Deine Termine:</h2>
 
 <!-- Formular zum Erstellen eines neuen Termins -->
 <h3>Neuen Termin erstellen:</h3>
@@ -20,15 +19,19 @@
     <input type="text" id="beschreibung" name="beschreibung" required><br>
 
     <label for="datum">Datum:</label>
-    <input type="date" id="datum" name="datum" required><br>
+    <input type="date" id="datum" name="datum" required><br><br>
 
     <label for="start_time">Startzeit:</label>
-    <input type="time" id="start_time" name="start_time" required><br>
+    <input type="time" id="start_time" name="start_time" required><br><br>
 
     <label for="end_time">Endzeit:</label>
     <input type="time" id="end_time" name="end_time" required><br>
 
-    <button type="submit">Termin hinzufügen</button>
+    <br><button type="submit">Termin hinzufügen</button>
+</form>
+<form action="calender.jsp" method="get">
+    <button type="submit"> zurück</button>
+
 </form>
 
 </body>

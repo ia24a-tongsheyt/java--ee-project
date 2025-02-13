@@ -12,7 +12,7 @@
 </head>
 <body>
 <header>
-    <h1>Kalender für Januar 2025</h1>
+    <h1>Kalender für 2025</h1>
 </header>
 
 <h2>Deine Termine:</h2>
@@ -60,7 +60,7 @@
     </tbody>
 </table>
 <form action="termin.jsp" method="get">
-    <button type="submit"> Zur Terminübersicht</button>
+    <button type="submit"> Termin erstellen</button>
 
 </form>
 </body>

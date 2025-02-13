@@ -1,59 +1,79 @@
-/* Allgemeines Design */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
-    margin: 0;
-    padding: 0;
+    background-color: #ddd3ce;
+
+    padding: 20px;
 }
 
-header {
-    background-color: #f2d194;
-    padding: 20px;
+header h1 {
     text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+h2 {
     font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 Spalten für Wochentage */
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.calendar-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendar-day {
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.calendar-day.empty {
+    background-color: #f1f1f1; /* Platzhalter für leere Tage */
+}
+
+.calendar-day strong {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+ul {
+    padding-left: 10px;
+}
+
+ul li {
+    font-size: 0.9em;
+    margin: 5px 0;
 }
 
 button {
-    background-color: #f2d194;
+    display: block;
+    margin: 20px auto;
     padding: 10px 20px;
-    font-size: 1em;
+    background-color: #007BFF;
+    color: white;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #d4b28d;
+    background-color: #0056b3;
 }
 
-/* Formular-Stile */
-form {
-    margin: 20px;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+.login-container input{
+
 }
 
-input[type="text"], input[type="password"], input[type="date"], input[type="text"], textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-/* Kalender Layout */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 5px 0;
-}
-
-/* Fehleranzeige */
-.error {
-    color: red;
-    font-weight: bold;
+.login-container{
+    text-align: center;
 }
