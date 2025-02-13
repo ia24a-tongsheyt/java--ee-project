@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Kalender</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 <header>
