@@ -1,7 +1,9 @@
 package org.example.project;
 
 import jakarta.persistence.*;
+
 import java.time.LocalDate;
+import java.time.LocalTime;
 
 @Entity
 @Table(name = "Termin") // Verknüpfung mit der Tabelle "Termin"
@@ -18,7 +20,13 @@ public class Termin {
     private String beschreibung;
 
     @Column(nullable = false)
-    private LocalDate datum;
+    private LocalTime startTime;  // Startzeit des Termins (nur TIME)
+
+    @Column(nullable = false)
+    private LocalTime endTime;  // Endzeit des Termins (nur TIME)
+
+    @Column(nullable = false)
+    private LocalDate datum;  // Datum des Termins (nur DATE)
 
     // Getter und Setter
     public int getTermin_id() {
@@ -43,6 +51,22 @@ public class Termin {
 
     public void setBeschreibung(String beschreibung) {
         this.beschreibung = beschreibung;
+    }
+
+    public LocalTime getStartTime() {
+        return startTime;
+    }
+
+    public void setStartTime(LocalTime startTime) {
+        this.startTime = startTime;
+    }
+
+    public LocalTime getEndTime() {
+        return endTime;
+    }
+
+    public void setEndTime(LocalTime endTime) {
+        this.endTime = endTime;
     }
 
     public LocalDate getDatum() {
