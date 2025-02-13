@@ -1,0 +1,67 @@
+/* Grundstil für die Seite */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Hellgrau für den Hintergrund */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Bereich */
+header {
+    background-color: #f2d02f; /* Gelb */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Formularbereich */
+form {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #f2d02f; /* Gelb */
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e5b600; /* Dunkleres Gelb für Hover */
+}
+
+/* Fehler-Meldung */
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
