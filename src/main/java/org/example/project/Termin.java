@@ -2,20 +2,28 @@ package org.example.project;
 
 import jakarta.persistence.*;
 import java.time.LocalDate;
+import java.time.LocalTime;
 
 @Entity
-@Table(name = "Termin") // Verknüpfung mit der Tabelle "Termin"
+@Table(name = "Termin")
 public class Termin {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int termin_id;
 
-    @ManyToOne  // Viele Termine gehören zu einem Benutzer
-    @JoinColumn(name = "user_id", nullable = false)  // Verknüpfung mit der "user_id"-Spalte in der User-Tabelle
+    @ManyToOne
+    @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
     @Column
     private String beschreibung;
+
+    @Column(nullable = false)
+    private LocalTime startTime;
+
+    @Column(nullable = false)
+    private LocalTime endTime;
 
     @Column(nullable = false)
     private LocalDate datum;
@@ -43,6 +51,22 @@ public class Termin {
 
     public void setBeschreibung(String beschreibung) {
         this.beschreibung = beschreibung;
+    }
+
+    public LocalTime getStartTime() {
+        return startTime;
+    }
+
+    public void setStartTime(LocalTime startTime) {
+        this.startTime = startTime;
+    }
+
+    public LocalTime getEndTime() {
+        return endTime;
+    }
+
+    public void setEndTime(LocalTime endTime) {
+        this.endTime = endTime;
     }
 
     public LocalDate getDatum() {
