@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<img src="css/images/logo.png" class="logo">
 <header>
     <h1>Kalender für 2025</h1>
 </header>

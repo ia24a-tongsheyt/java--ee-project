@@ -55,25 +55,49 @@ ul li {
     margin: 5px 0;
 }
 
-button {
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
 
-button:hover {
-    background-color: #0056b3;
-}
+
+
 
 .login-container input{
+
+    background-color: saddlebrown;
 
 }
 
 .login-container{
     text-align: center;
 }
+
+.termin-container{
+    text-align: center;
+}
+
+input {
+    outline: none;
+    border-color: #d7ccc8;
+    background-color: #8d6e63;
+}
+
+.logo {
+    position: absolute;   /* Positionierung relativ zum nächstgelegenen positionierten Element */
+    top: 10px;
+    right: 10px;
+    width: 100px;        /* Breite des Logos */
+    height: auto;        /* Höhe wird proportional angepasst */
+    z-index: 10;         /* Stellt sicher, dass das Logo über anderen Elementen liegt */
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+

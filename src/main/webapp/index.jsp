@@ -8,12 +8,18 @@
 </head>
 <body>
 
+<img src="css/images/logo.png" class="logo">
+
+
+
+
+
 <div class="login-container">
     <h1>Bitte loggen Sie sich ein</h1>
 
     <form action="LoginServlet" method="post">
         <label for="username">Benutzername:</label>
-        <input type="text" name="username" id="username" required><br>
+        <input type="text" name="username" id="username" required><br><br>
 
         <label for="password">Passwort:</label>
         <input type="password" name="password" id="password" required><br>

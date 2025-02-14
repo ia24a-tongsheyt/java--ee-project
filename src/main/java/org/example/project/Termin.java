@@ -1,32 +1,32 @@
 package org.example.project;
 
 import jakarta.persistence.*;
-
 import java.time.LocalDate;
 import java.time.LocalTime;
 
 @Entity
-@Table(name = "Termin") // Verknüpfung mit der Tabelle "Termin"
+@Table(name = "Termin")
 public class Termin {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int termin_id;
 
-    @ManyToOne  // Viele Termine gehören zu einem Benutzer
-    @JoinColumn(name = "user_id", nullable = false)  // Verknüpfung mit der "user_id"-Spalte in der User-Tabelle
+    @ManyToOne
+    @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
     @Column
     private String beschreibung;
 
     @Column(nullable = false)
-    private LocalTime startTime;  // Startzeit des Termins (nur TIME)
+    private LocalTime startTime;
 
     @Column(nullable = false)
-    private LocalTime endTime;  // Endzeit des Termins (nur TIME)
+    private LocalTime endTime;
 
     @Column(nullable = false)
-    private LocalDate datum;  // Datum des Termins (nur DATE)
+    private LocalDate datum;
 
     // Getter und Setter
     public int getTermin_id() {
