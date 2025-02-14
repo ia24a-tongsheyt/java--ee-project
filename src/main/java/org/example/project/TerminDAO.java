@@ -18,7 +18,7 @@ public class TerminDAO {
             statement.setTime(3, Time.valueOf(termin.getEndTime()));  // Endzeit setzen (LocalTime -> Time)
             statement.setString(4, termin.getBeschreibung());  // Beschreibung setzen
             statement.setInt(5, termin.getUser().getUser_id());  // user_id verknüpfen
-            statement.executeUpdate();
+            statement.executeUpdate(); //hallo
             System.out.println("Termin erfolgreich erstellt.");
         }
     }
